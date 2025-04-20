@@ -1,0 +1,21 @@
+<config>
+    <ise>
+        <hostname>10.10.10.10</hostname>
+        <username>admin</username>
+        <password>ISEisC00L</password>
+    </ise>
+    <ftp>
+        <hostname>10.10.10.11</hostname>
+        <username>isebackupuser</username>
+        <password>isebackuppassword</password>password</password>
+        <backup_dir>/backups</backup_dir>
+    </ftp>
+    <backup>
+        <name>ise-backup</name> <!-- Base name for config backup -->
+        <encryption_key>MyIseSecretKey</encryption_key>
+        <ca_keys_fixed_filename>ise_ca_key_pairs_of_ise-server</ca_keys_fixed_filename> <!-- Added Fixed Name -->
+    </backup>
+    <options>
+        <preserve_ssl>true</preserve_ssl> <!-- Example, not used by current script -->
+    </options>
+</config>
